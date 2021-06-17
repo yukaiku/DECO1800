@@ -1,0 +1,355 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Oct, 2019, 1:18:38 PM
+    Author     : yukaiku
+*/
+
+
+/* IDs */
+#menu{
+    width:100%;
+    height:75px;
+    top: 0px;
+    position: absolute;
+    z-index: 999;
+    background-color: #000;
+    opacity: 0.8;
+    text-align: right;
+    font-size: -webkit-xxx-large;
+}
+
+#profilepic{
+    width:100%;
+}
+
+/* Class */
+.aboutMeInfo{
+    width:60%;
+    text-align: left;
+    color:white;
+}
+.aboutMePic{
+    width:30%;
+    opacity:1 !important;
+}
+
+.container {
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+    height:80%;
+}
+
+.container > div {
+    background-color: #000;
+    opacity: 0.8;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    float:left;
+}
+
+.container > div:hover {
+    opacity: 1;
+
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    color: white;
+}
+
+.flip-box-back {
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    opacity: 1;
+}
+
+.grid3{
+    width:28.439%;
+    height: 50%;
+
+    border-radius: 25px;
+}
+
+.grid4{
+    width:20%;
+
+    border-radius: 25px;
+}
+
+.gridBox{
+    background-color: black;
+    color:white;
+
+}
+.gridBox p{
+    padding-top: 25%;
+}
+
+.header{
+
+}
+
+.section {
+    text-align:center;
+    font-size: 3em;
+}
+
+
+/*--------------------------------------Circular Progres Bar CSS--------------------------------------*/
+.circle{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+    width:100%;
+    height:100%;
+}
+.circle canvas{
+    height:inherit !important;
+    width: inherit !important;
+}
+.circle strong {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+
+/*POP UP CSS*/
+#popup {
+    height: 40%;
+    width: 21.4%;
+    position: absolute;
+    z-index:99;
+    background: black;
+    opacity:1;
+    display: none;
+    border-radius: 25px;
+    overflow-y: auto;
+}
+
+/*popup images*/
+.popup-images{
+    height: -webkit-fill-available;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    float: left;
+}
+
+.popup-images2{
+    height: -webkit-fill-available;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: right;
+}
+
+.popup-images3{
+    height: -webkit-fill-available;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5% !important;
+    padding-right: 15% !important;
+    float:right;
+}
+
+.popup-section-div{
+    display:flow-root;
+}
+
+.popup-text-float-left{
+    float:left;
+    color:white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 20px;
+}
+
+/* --------------------------------------Slide show css--------------------------------------*/
+.slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+.slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+/* --------------------------------------Slider css--------------------------------------*/
+.section-container{
+    overflow-y: scroll;
+    width:-webkit-fill-available;
+    height:350px;
+    opacity: 1 !important;
+    border-radius: 25px;
+}
+
+.section-container > ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+.section-container > ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+.section-div{
+    color:white;
+    opacity: 1 !important;
+    display: flow-root;
+    border-radius: 25px;
+}
+
+
+/*--------------------------------------Tabs CSS--------------------------------------*/
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1 !important;
+  padding:0 !important;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: white;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 84.5%;
+  border-left: none;
+  height: 300px;
+  color:white;
+  opacity:1 !important;
+}
+/*--------------------------------------Page 3 CSS--------------------------------------*/
+#work-in-progress{
+}
+
+.button{
+    opacity:0.4;
+}
+
+#moveUpButton {
+    position:absolute;
+    font-size: 18px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+    right:52%;
+    bottom:40%;
+}
+
+#moveUpButton:hover {
+    background-color: #555;
+}
+
+#moveDownButton {
+    position:absolute;
+    font-size: 18px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+    right:52%;
+    bottom:25%;
+}
+
+#moveDownButton:hover {
+    background-color: #555;
+}
+
+.arrowButton{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
