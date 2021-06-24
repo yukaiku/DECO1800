@@ -1,2 +1,2 @@
 # DECO1800
-Sample Web Portfolio
+Sample Web Portfolio with animations etc
